@@ -1,0 +1,115 @@
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+body{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+
+.component-wrapper{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+  width: 70vw;
+  font-family: Karla;
+  font-size: 16px;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.title{
+  margin-bottom: 20px;
+}
+
+.sum-up-container .title{
+  color: hsl(179, 62%, 43%);
+}
+
+.sum-up-container .subtitle{
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 10px;
+}
+
+.sum-up-container .content{
+  color: hsl(218, 22%, 67%);
+  line-height: 25px;
+}
+
+#bottom-part{
+  display: flex;
+  color: white;
+}
+
+#top-part, .subscription-container, .about-us-container{
+  padding: 30px;
+}
+
+.subscription-container, .about-us-container{
+  flex: 1;
+}
+
+.subscription-container{
+  background-color: #2bb3b2;
+}
+
+.subscription-container .price{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.subscription-container .price-tag{
+  font-size: 2em;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.subscription-container .description{
+  opacity: 0.7;
+}
+
+.subscription-container button{
+  background-color: hsl(71, 73%, 54%);
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 0px;
+  box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.10);
+  margin-top: 30px;
+  font-size: 16px;
+  color: inherit;
+  font-family: 'karla';
+}
+
+.subscription-container button:hover{
+  cursor: pointer;
+  filter: brightness(0.9);
+  transform: scale(1.04);
+}
+
+.about-us-container{
+  background-color: #4abebd;
+}
+
+.about-us-container .content{
+  opacity: 0.7;
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media (max-width: 600px){
+  body{
+    padding-top: 40px;
+  }
+  
+  #bottom-part{
+    flex-direction: column;
+  }
+}
