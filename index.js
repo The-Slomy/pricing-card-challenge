@@ -1,6 +1,6 @@
 const button = document.getElementById('btn-test');
 
-button.addEventListener('onclick', clickEvent());
+button.addEventListener('click', clickEvent);
 
 function clickEvent() {
   alert('You won\'t regret it !');
